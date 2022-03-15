@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ExploreCocktails from './pages/ExploreCocktails';
-import SearchCocktails from './pages/SearchCocktails';
+import CocktailSearch from './pages/CocktailSearch';
 import RandomCocktail from './pages/RandomCocktail';
 import SingleCocktail from './pages/SingleCocktail';
 import CocktailsLetter from './pages/CocktailsLetter';
@@ -21,7 +21,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<ExploreCocktails />} />
-          <Route path="/search" element={<SearchCocktails />} />
+          <Route path="/search" element={<CocktailSearch />} />
           <Route path="/random" element={<RandomCocktail />} />
           <Route path="atoz" element={<CocktailsLetter />} />
           <Route path="/cocktail/:id" element={<SingleCocktail />} />
