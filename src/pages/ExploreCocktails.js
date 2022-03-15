@@ -4,7 +4,7 @@ import Loading from '../components/Loading';
 import Error from '../components/Error';
 import CocktailList from '../components/CocktailList';
 
-export const Explore = () => {
+export const ExploreCocktails = () => {
 
     const [category, setCategory] = useState("randomselection");
 
@@ -29,4 +29,4 @@ export const Explore = () => {
     );
 };
 
-export default Explore;
+export default ExploreCocktails;
