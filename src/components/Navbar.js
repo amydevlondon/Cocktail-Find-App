@@ -22,6 +22,9 @@ export const Navbar = () => {
                             <a className="nav-link" href="/search" data-text="search"><FaSearch className="link-icon"/>Search</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="/atoz" data-text="random">A-Z</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="/random" data-text="random"><FaRandom className="link-icon"/>Random</a>
                         </li>
                     </ul>
