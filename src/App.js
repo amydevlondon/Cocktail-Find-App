@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Explore from './pages/Explore';
-import Search from './pages/Search';
-import Random from './pages/Random';
+import ExploreCocktails from './pages/ExploreCocktails';
+import SearchCocktails from './pages/SearchCocktails';
+import RandomCocktail from './pages/RandomCocktail';
 import SingleCocktail from './pages/SingleCocktail';
+import CocktailsLetter from './pages/CocktailsLetter';
 import {
   BrowserRouter,
   Routes,
@@ -19,9 +20,10 @@ export const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/random" element={<Random />} />
+          <Route path="/explore" element={<ExploreCocktails />} />
+          <Route path="/search" element={<SearchCocktails />} />
+          <Route path="/random" element={<RandomCocktail />} />
+          <Route path="atoz" element={<CocktailsLetter />} />
           <Route path="/cocktail/:id" element={<SingleCocktail />} />
         </Routes>
       </BrowserRouter>
