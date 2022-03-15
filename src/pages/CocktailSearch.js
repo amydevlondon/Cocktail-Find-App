@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 import Error from '../components/Error';
 import CocktailList from '../components/CocktailList';
 
-export const Search = () => {
+export const CocktailSearch = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
     const [cocktails, setCocktails] = useState([]);
@@ -14,7 +14,7 @@ export const Search = () => {
     const fetchDrinks = async () => {
         setIsLoading(true);
         try {
-            const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}${searchTerm}`);
+            const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}s=${searchTerm}`);
             const data = await response.json();
             setIsLoading(false);
             if (data.drinks) {
@@ -48,6 +48,7 @@ export const Search = () => {
                             type="text"
                             placeholder="search cocktails"
                             value={searchTerm}
+                            autoFocus
                             onChange={(e) => { setSearchTerm(e.target.value); }}
                         />
                         <button type="submit" className="submit-btn"><FaSearch className="search-icon" /></button>
@@ -65,4 +66,4 @@ export const Search = () => {
     );
 };
 
-export default Search;
+export default CocktailSearch;
