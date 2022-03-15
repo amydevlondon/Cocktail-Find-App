@@ -160,11 +160,14 @@ ul {
 /* SINGLE COCKTAIL */
 .random-cocktail,
 .single-cocktail {
-	padding: 4rem 1rem;
+	min-height: 75vh;
+	display: grid;
+	place-content: center;
+	place-items: center;
 }
 .single-cocktail .cocktail {
 	display: grid;
-	width: 90vw;
+	width: 93vw;
 }
 .single-cocktail .cocktail-name {
 	font-size: var(--xl-font-size);
