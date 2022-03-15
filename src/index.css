@@ -9,7 +9,7 @@
 	--font-color: hsl(0, 0%, 23%);
 	--body-color: hsl(350, 38%, 88%);
 	--pink: hsl(327, 93%, 58%);
-	--overlay: hsla(327, 50%, 90%, .8);
+	--overlay: hsla(327, 70%, 90%, .8);
 	--transition: .3s linear;
 	--radius: 3px;
 }
@@ -216,6 +216,12 @@ ul {
 .results-message {
 	text-align: center;
 	padding: 3rem;
+}
+.results-message h4 {
+	font-size: var(--large-font-size);
+}
+.results-message a {
+	font-size: 1.5rem;
 }
 /* EXPLORE */
 .form select {
