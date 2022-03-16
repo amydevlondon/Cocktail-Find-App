@@ -10,10 +10,16 @@ export const Hero = () => {
             <div className="overlay" />
             <div className="hero-text">
                 <h1>cocktail<FaCocktail className="cocktail-icon" />find</h1>
+                <div className="hero-links">
                     <a href="/explore">
                         explore cocktails
                         <FiArrowRightCircle className="arrow-icon" />
                     </a>
+                    <a href="/search">
+                        search cocktails
+                        <FiArrowRightCircle className="arrow-icon" />
+                    </a>
+                </div>
             </div>
         </div>
     );
