@@ -73,7 +73,7 @@ ul {
 }
 .navbar .link-icon:not(.navbar-brand .link-icon) {
 	margin-right: .25rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 /* HERO */
 .hero-image,
@@ -106,9 +106,14 @@ ul {
 	margin-bottom: .25rem;
 	color: var(--pink);
 }
+.hero-links {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
 .hero-text a {
 	font-size: 1.5rem;
-	margin-top: 1.5rem;
+	margin-top: .25rem;
 	display: inline-block;
 }
 .arrow-icon {
@@ -156,6 +161,14 @@ ul {
 }
 .cocktail p {
 	margin: 0;
+}
+.cocktail a {
+	margin-top: .5rem;
+	display: inline-block;
+	background-color: var(--overlay);
+	border-radius: var(--radius);
+	padding: .1rem .5rem;
+	letter-spacing: 2px;
 }
 /* SINGLE COCKTAIL */
 .random-cocktail,
