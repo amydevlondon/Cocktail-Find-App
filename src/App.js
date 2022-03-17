@@ -5,7 +5,7 @@ import ExploreCocktails from './pages/ExploreCocktails';
 import CocktailSearch from './pages/CocktailSearch';
 import RandomCocktail from './pages/RandomCocktail';
 import SingleCocktail from './pages/SingleCocktail';
-import CocktailsLetter from './pages/CocktailsLetter';
+import CocktailsByLetter from './pages/CocktailsByLetter';
 import {
   BrowserRouter,
   Routes,
@@ -23,7 +23,7 @@ export const App = () => {
           <Route path="/explore" element={<ExploreCocktails />} />
           <Route path="/search" element={<CocktailSearch />} />
           <Route path="/random" element={<RandomCocktail />} />
-          <Route path="atoz" element={<CocktailsLetter />} />
+          <Route path="atoz" element={<CocktailsByLetter />} />
           <Route path="/cocktail/:id" element={<SingleCocktail />} />
         </Routes>
       </BrowserRouter>
