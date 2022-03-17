@@ -42,7 +42,7 @@ export const CocktailSearch = () => {
         isLoading ? <Loading />
             : isError ? <Error />
                 :
-                <section className="search">
+                <>
                     <form className="form" onSubmit={handleSubmit}>
                         <input
                             type="text"
@@ -62,7 +62,7 @@ export const CocktailSearch = () => {
                             </div> 
                             : null}
                     <CocktailList cocktails={cocktails} />
-                </section>
+                </>
     );
 };
 

@@ -16,7 +16,7 @@ export const ExploreCocktails = () => {
         isLoading ? <Loading />
             : isError ? <Error />
                 :
-                <section className="explore">
+                <>
                     <form className="form">
                         <select value={category} onChange={(e) => { setCategory(e.target.value); }}>
                             <option value="popular">Popular</option>
@@ -25,7 +25,7 @@ export const ExploreCocktails = () => {
                         </select>
                     </form>
                     <CocktailList cocktails={cocktails} />
-                </section>
+                </>
     );
 };
 
