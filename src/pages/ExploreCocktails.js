@@ -12,20 +12,21 @@ export const ExploreCocktails = () => {
         `${process.env.REACT_APP_URL}${process.env.REACT_APP_API_KEY}/${category}.php`
     );
 
+    if (isLoading)
+        return <Loading />;
+    if (isError)
+        return <Error />;
     return (
-        isLoading ? <Loading />
-            : isError ? <Error />
-                :
-                <>
-                    <form className="form">
-                        <select value={category} onChange={(e) => { setCategory(e.target.value); }}>
-                            <option value="popular">Popular</option>
-                            <option value="recent">Recently Added</option>
-                            <option value="randomselection">Random</option>
-                        </select>
-                    </form>
-                    <CocktailList cocktails={cocktails} />
-                </>
+        <>
+            <form className="form">
+                <select value={category} onChange={(e) => { setCategory(e.target.value); }}>
+                    <option value="popular">Popular</option>
+                    <option value="recent">Recently Added</option>
+                    <option value="randomselection">Random</option>
+                </select>
+            </form>
+            <CocktailList cocktails={cocktails} />
+        </>
     );
 };
 
