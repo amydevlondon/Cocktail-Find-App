@@ -13,23 +13,24 @@ export const CocktailsByLetter = () => {
         `${process.env.REACT_APP_URL_SEARCH}f=${letter}`
     );
 
+    if (isLoading)
+        return <Loading />;
+    if (isError)
+        return <Error />;
     return (
-        isLoading ? <Loading />
-            : isError ? <Error />
-                :
-                <>
-                    <form className="form">
-                        <label htmlFor=""></label>
-                        <select value={letter} onChange={(e) => { setLetter(e.target.value); }}>
-                            {alphabet.map((item) => {
-                                return (
-                                    <option value={item}>{item}</option>
-                                );
-                            })}
-                        </select>
-                    </form>
-                    <CocktailList cocktails={cocktails} />
-                </>
+        <>
+            <form className="form">
+                <label htmlFor=""></label>
+                <select value={letter} onChange={(e) => { setLetter(e.target.value); }}>
+                    {alphabet.map((item) => {
+                        return (
+                            <option key={item} value={item}>{item}</option>
+                        );
+                    })}
+                </select>
+            </form>
+            <CocktailList cocktails={cocktails} />
+        </>
     );
 };
 
