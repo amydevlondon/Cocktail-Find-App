@@ -16,8 +16,8 @@ export const App = () => {
 
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<ExploreCocktails />} />
