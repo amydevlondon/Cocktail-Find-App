@@ -11,12 +11,11 @@ export const CocktailSearch = () => {
     const [cocktails, setCocktails] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    const fetchDrinks = async () => {
+    const fetchDrinks = async (value = "") => {
         setIsLoading(true);
         try {
-            const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}s=${searchTerm}`);
+            const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}s=${value}`);
             const data = await response.json();
-            setIsLoading(false);
             if (data.drinks) {
                 setCocktails(data.drinks);
             } else {
@@ -25,6 +24,7 @@ export const CocktailSearch = () => {
         }
         catch (error) {
             setIsError(true);
+        } finally {
             setIsLoading(false);
         }
     };
@@ -35,34 +35,40 @@ export const CocktailSearch = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetchDrinks();
+        fetchDrinks(searchTerm);
     };
 
+    const handleClick = () => {
+        fetchDrinks();
+        setSearchTerm("");
+    };
+
+    if (isLoading)
+        return <Loading />;
+    if (isError)
+        return <Error />;
     return (
-        isLoading ? <Loading />
-            : isError ? <Error />
-                :
-                <>
-                    <form className="form" onSubmit={handleSubmit}>
-                        <input
-                            type="text"
-                            placeholder="search cocktails"
-                            value={searchTerm}
-                            autoFocus
-                            onChange={(e) => { setSearchTerm(e.target.value); }}
-                        />
-                        <button type="submit" className="submit-btn"><FaSearch className="search-icon" /></button>
-                    </form>
-                    {cocktails.length < 1 ? 
-                    <div className="results-message">
-                        <h4>No results found</h4> 
-                        <a href="/search">
-                            <FiArrowLeftCircle /> Back
-                            </a>
-                            </div> 
-                            : null}
-                    <CocktailList cocktails={cocktails} />
-                </>
+        <>
+            <form className="form" onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="search cocktails"
+                    value={searchTerm}
+                    autoFocus
+                    onChange={(e) => { setSearchTerm(e.target.value); }}
+                />
+                <button type="submit" className="submit-btn"><FaSearch className="search-icon" /></button>
+            </form>
+            {!cocktails.length &&
+                <div className="results-message">
+                    <h4>No results found</h4>
+                    <button onClick={handleClick} className="results-btn">
+                        <FiArrowLeftCircle /> Back
+                            </button>
+                </div>
+            }
+            <CocktailList cocktails={cocktails} />
+        </>
     );
 };
 
