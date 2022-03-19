@@ -1,31 +1,32 @@
 import React from 'react';
 import { FaBars, FaHome, FaSearch, FaCocktail, FaRandom } from 'react-icons/fa';
 import { MdExplore } from 'react-icons/md';
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-sm">
+        <nav className="navbar navbar-custom navbar-expand-md">
             <div className="container-fluid">
-                <a href="/" className="navbar-brand">Cocktail<FaCocktail className="link-icon cocktail-icon"/>Find</a>
+                <Link to="/" className="navbar-brand">Cocktail<FaCocktail className="link-icon cocktail-icon" />Find</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <FaBars />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="/" data-text="home"><FaHome className="link-icon"/>Home</a>
+                            <Link to="/" className="nav-link"><FaHome className="link-icon" />Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/explore" data-text="explore"><MdExplore className="link-icon"/>Explore</a>
+                            <Link to="/explore" className="nav-link"><MdExplore className="link-icon" />Explore</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/search" data-text="search"><FaSearch className="link-icon"/>Search</a>
+                            <Link to="/search" className="nav-link"><FaSearch className="link-icon" />Search</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/atoz" data-text="random">A-Z</a>
+                            <Link to="/atoz" className="nav-link" href="/atoz">A-Z</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/random" data-text="random"><FaRandom className="link-icon"/>Random</a>
+                            <Link to="/random" className="nav-link"><FaRandom className="link-icon" />Random</Link>
                         </li>
                     </ul>
                 </div>
