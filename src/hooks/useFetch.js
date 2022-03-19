@@ -11,11 +11,11 @@ const useFetch = (url) => {
             try {
                 const response = await fetch(url);
                 const data = await response.json();
-                setIsLoading(false);
                 setCocktails(data.drinks);
             } catch (error) {
-                setIsLoading(false);
                 setIsError(true);
+            } finally {
+                setIsLoading(false);
             }
         };
         fetchData();
