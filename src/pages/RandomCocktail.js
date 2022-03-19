@@ -8,17 +8,15 @@ export const RandomCocktail = () => {
     const { isLoading, isError, cocktails } = useFetch(
         `${process.env.REACT_APP_URL}${process.env.REACT_APP_API_KEY}/random.php`
     );
+
+    if (isLoading)
+        return <Loading />;
+    if (isError)
+        return <Error />;
     return (
-        isLoading ? <Loading />
-            : isError ? <Error />
-                :
-                <section className="random-cocktail">
-                    {cocktails.map((cocktail) => {
-                        return (
-                            <Cocktail key={cocktail.idDrink} {...cocktail} />
-                        );
-                    })}
-                </section>
+        <section className="random-cocktail">
+            <Cocktail key={cocktails[0].idDrink} {...cocktails[0]} />
+        </section>
     );
 };
 
