@@ -55,24 +55,24 @@ ul {
 	padding: 1rem;
 }
 .navbar-toggler {
-	color: var(--text-color);
+	color: inherit;
 	border: none;
 	font-size: 1.5rem;
 	background-color: transparent;
 }
-.navbar .navbar-brand {
+.navbar-custom.navbar .navbar-brand {
 	font-size: 1.5rem;
 }
-.navbar a {
-	color: var(--font-color) !important;
-	font-size: 1.15rem;
+.navbar-custom.navbar a {
+	color: var(--font-color);
+	font-size: 1.25rem;
 }
-.navbar a:hover {
-	color: var(--pink) !important;
+.navbar-custom.navbar a:hover {
+	color: var(--pink);
 	transition: var(--transition);
 }
 .navbar .link-icon:not(.navbar-brand .link-icon) {
-	margin-right: .25rem;
+	margin-right: .2rem;
 	font-size: 1.1rem;
 }
 /* HERO */
@@ -237,8 +237,11 @@ ul {
 .results-message h4 {
 	font-size: var(--large-font-size);
 }
-.results-message a {
+.results-btn {
 	font-size: 1.5rem;
+	border: none;
+	background-color: transparent;
+	color: inherit;
 }
 /* EXPLORE */
 .form select {
