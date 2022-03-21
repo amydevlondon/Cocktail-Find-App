@@ -245,6 +245,7 @@ ul {
 }
 /* EXPLORE */
 .form select {
+	cursor: pointer;
 	padding: 1rem 2rem;
 	background-color: var(--body-color);
 	border-radius: var(--radius);
