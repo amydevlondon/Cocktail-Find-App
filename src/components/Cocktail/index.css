@@ -1,0 +1,31 @@
+.cocktail {
+	border-radius: var(--radius);
+	padding: 1rem;
+	background-color: hsl(0, 0%, 100%, .7);
+	border: solid 1px hsl(350, 38%, 85%);
+	margin: 0 auto;
+}
+.cocktail img {
+	width: 100%;
+	border-radius: var(--radius);
+	margin-bottom: .55rem;
+}
+.cocktail-info {
+	padding: .5rem;
+}
+.cocktail-name {
+	font-family: var(--header-font-family);
+	font-size: var(--large-font-size);
+	margin-bottom: .25rem;
+}
+.cocktail p {
+	margin: 0;
+}
+.cocktail a {
+	margin-top: .5rem;
+	display: inline-block;
+	background-color: var(--overlay);
+	border-radius: var(--radius);
+	padding: .1rem .5rem;
+	letter-spacing: 2px;
+}

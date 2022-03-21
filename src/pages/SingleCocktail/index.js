@@ -1,7 +1,8 @@
 import React from 'react';
-import useFetch from '../hooks/useFetch';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
+import './index.css';
+import useFetch from '../../hooks/useFetch';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 import { useParams } from 'react-router-dom';
 
 export const SingleCocktail = () => {

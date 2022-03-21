@@ -1,0 +1,24 @@
+.navbar {
+	padding: 1rem;
+}
+.navbar-toggler {
+	color: inherit;
+	border: none;
+	font-size: 1.5rem;
+	background-color: transparent;
+}
+.navbar-custom.navbar .navbar-brand {
+	font-size: 1.5rem;
+}
+.navbar-custom.navbar a {
+	color: var(--font-color);
+	font-size: 1.25rem;
+}
+.navbar-custom.navbar a:hover {
+	color: var(--pink);
+	transition: var(--transition);
+}
+.navbar .link-icon:not(.navbar-brand .link-icon) {
+	margin-right: .2rem;
+	font-size: 1.1rem;
+}

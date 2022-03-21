@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import useFetch from '../hooks/useFetch';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import CocktailList from '../components/CocktailList';
+import './index.css';
+import useFetch from '../../hooks/useFetch';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
+import CocktailList from '../../components/CocktailList';
 
 export const ExploreCocktails = () => {
 

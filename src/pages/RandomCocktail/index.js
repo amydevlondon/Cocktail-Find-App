@@ -1,8 +1,9 @@
 import React from 'react';
-import useFetch from '../hooks/useFetch';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import Cocktail from '../components/Cocktail';
+import './index.css';
+import useFetch from '../../hooks/useFetch';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
+import Cocktail from '../../components/Cocktail';
 
 export const RandomCocktail = () => {
     const { isLoading, isError, cocktails } = useFetch(

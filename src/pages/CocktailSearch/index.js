@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import './index.css';
 import { FaSearch } from 'react-icons/fa';
 import { FiArrowLeftCircle } from 'react-icons/fi';
-import Loading from '../components/Loading';
-import Error from '../components/Error';
-import CocktailList from '../components/CocktailList';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
+import CocktailList from '../../components/CocktailList';
 
 export const CocktailSearch = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -63,7 +64,7 @@ export const CocktailSearch = () => {
                 <div className="results-message">
                     <h4>No results found</h4>
                     <button onClick={handleClick} className="results-btn">
-                        <FiArrowLeftCircle /> Back
+                        <FiArrowLeftCircle className="arrow-icon" /> Back
                             </button>
                 </div>
             }

@@ -1,0 +1,28 @@
+.single-cocktail {
+	min-height: 85vh;
+	display: grid;
+	place-content: center;
+	place-items: center;
+}
+.single-cocktail .cocktail {
+	display: grid;
+	width: 93vw;
+	max-width: 1050px;
+}
+.single-cocktail .cocktail-name {
+	font-size: var(--xl-font-size);
+}
+.single-cocktail .cocktail p {
+	margin: .25rem 0;
+}
+.cocktail-instructions {
+	max-width: 400px;
+}
+@media screen and (min-width: 800px) {
+	.single-cocktail .cocktail {
+		grid-template-columns: 1fr 1fr;
+		place-items: center;
+		place-content: center;
+		column-gap: 1.5rem;
+	}
+}

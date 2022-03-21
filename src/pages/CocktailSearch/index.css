@@ -1,0 +1,31 @@
+.form input {
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: transparent;
+	border-radius: 0px;
+	border: none;
+	border-bottom: solid 2px var(--font-color);
+	width: 75vw;
+	max-width: 450px;
+}
+.submit-btn {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+}
+.search-icon {
+	font-size: 1.3rem;
+}
+.results-message {
+	text-align: center;
+	padding: 3rem;
+}
+.results-message h4 {
+	font-size: var(--large-font-size);
+}
+.results-btn {
+	font-size: 1.5rem;
+	border: none;
+	background-color: transparent;
+	color: inherit;
+}

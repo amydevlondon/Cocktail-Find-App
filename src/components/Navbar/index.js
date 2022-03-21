@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import { FaBars, FaHome, FaSearch, FaCocktail, FaRandom } from 'react-icons/fa';
 import { MdExplore } from 'react-icons/md';
 import { Link } from "react-router-dom";

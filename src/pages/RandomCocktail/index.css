@@ -1,0 +1,9 @@
+.random-cocktail {
+	min-height: 85vh;
+	display: grid;
+	place-content: center;
+	place-items: center;
+}
+.random-cocktail .cocktail {
+	max-width: 400px;
+}

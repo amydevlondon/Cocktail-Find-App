@@ -1,5 +1,6 @@
 import React from 'react';
-import Cocktail from './Cocktail';
+import './index.css';
+import Cocktail from '../Cocktail';
 
 export const CocktailList = ({ cocktails }) => {
     return (

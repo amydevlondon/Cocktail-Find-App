@@ -1,7 +1,8 @@
 import React from 'react';
+import './index.css';
 import { FaCocktail } from 'react-icons/fa';
 import { FiArrowRightCircle } from 'react-icons/fi';
-import image from '../images/image1.jpg';
+import image from '../../images/image1.jpg';
 import { Link } from "react-router-dom";
 
 export const Hero = () => {
