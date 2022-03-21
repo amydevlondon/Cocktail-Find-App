@@ -15,7 +15,7 @@
 }
 @media screen and (min-width: 600px) {
 	:root {
-		--xl-font-size: 3.2rem;
+		--xl-font-size: 3.5rem;
 		--large-font-size: 2rem;
 		--normal-font-size: 1.25rem;
 		--small-font-size: 1.1rem;
@@ -106,14 +106,9 @@ ul {
 	margin-bottom: .25rem;
 	color: var(--pink);
 }
-.hero-links {
-	margin-top: 1.5rem;
-	display: flex;
-	flex-direction: column;
-}
 .hero-text a {
 	font-size: 1.5rem;
-	margin-top: .25rem;
+	margin-top: 1rem;
 	display: inline-block;
 }
 .arrow-icon {
