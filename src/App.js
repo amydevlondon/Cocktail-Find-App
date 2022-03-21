@@ -15,7 +15,6 @@ import {
 export const App = () => {
 
   return (
-    <>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -27,7 +26,6 @@ export const App = () => {
           <Route path="/cocktail/:id" element={<SingleCocktail />} />
         </Routes>
       </BrowserRouter>
-    </>
   );
 };
 
