@@ -7,7 +7,7 @@ import CocktailList from '../../components/CocktailList';
 
 export const CocktailsByLetter = () => {
 
-    const [letter, setLetter] = useState("P");
+    const [letter, setLetter] = useState("A");
     const alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "W", "Y", "Z"];
 
     const { isLoading, isError, cocktails } = useFetch(
