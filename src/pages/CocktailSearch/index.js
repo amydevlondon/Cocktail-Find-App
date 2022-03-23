@@ -12,7 +12,7 @@ export const CocktailSearch = () => {
     const [cocktails, setCocktails] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    const fetchDrinks = async (value = "") => {
+    const fetchDrinks = async (value = "p") => {
         setIsLoading(true);
         try {
             const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}s=${value}`);
