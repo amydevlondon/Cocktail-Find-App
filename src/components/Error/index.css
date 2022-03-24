@@ -3,13 +3,14 @@
 	display: grid;
 	place-items: center;
 	place-content: center;
+	font-size: var(--large-font-size);
 }
 .error {
 	text-align: center;
 }
-.error-message h4 {
-	font-size: 2.5rem;
+.error-title {
+	font-size: var(--large-font-size);
 }
-.error-message p {
+.error-message {
 	margin-top: 1rem;
 }
