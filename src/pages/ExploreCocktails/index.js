@@ -16,7 +16,7 @@ export const ExploreCocktails = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error />;
+        return <Error message={"Something went wrong"}/>;
     return (
         <>
             <form className="form">
