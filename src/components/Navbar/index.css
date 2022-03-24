@@ -14,6 +14,9 @@
 	color: var(--font-color);
 	font-size: 1.25rem;
 }
+.navbar-custom.navbar .active:not(.navbar-brand) {
+	color: var(--pink);
+}
 .navbar-custom.navbar a:hover {
 	color: var(--pink);
 	transition: var(--transition);
