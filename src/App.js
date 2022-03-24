@@ -6,6 +6,7 @@ import CocktailSearch from './pages/CocktailSearch';
 import RandomCocktail from './pages/RandomCocktail';
 import SingleCocktail from './pages/SingleCocktail';
 import CocktailsByLetter from './pages/CocktailsByLetter';
+import Error from './components/Error';
 import {
   BrowserRouter,
   Routes,
@@ -24,6 +25,7 @@ export const App = () => {
           <Route path="/random" element={<RandomCocktail />} />
           <Route path="atoz" element={<CocktailsByLetter />} />
           <Route path="/cocktail/:id" element={<SingleCocktail />} />
+        <Route path="*" element={<Error message={"Page not found"}/>} />
         </Routes>
       </BrowserRouter>
   );
