@@ -9,7 +9,7 @@
 	--font-color: hsl(0, 0%, 23%);
 	--body-color: hsl(350, 38%, 88%);
 	--pink: hsl(327, 93%, 58%);
-	--overlay: hsla(327, 70%, 90%, .8);
+	--overlay: hsla(327, 30%, 90%, .8);
 	--transition: .3s linear;
 	--radius: 3px;
 }
@@ -51,11 +51,11 @@ ul {
 	display: block;
 }
 .arrow-icon {
-    margin-left: .3rem;
+	margin-left: .3rem;
 }
 .cocktail-icon {
 	margin-bottom: .25rem;
-    color: var(--pink);
+	color: var(--pink);
 }
 .form {
 	display: flex;
@@ -72,4 +72,3 @@ ul {
 	font-family: inherit;
 	color: inherit;
 }
-
