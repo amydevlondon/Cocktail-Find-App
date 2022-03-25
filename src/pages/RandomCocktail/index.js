@@ -6,6 +6,7 @@ import Error from '../../components/Error';
 import Cocktail from '../../components/Cocktail';
 
 export const RandomCocktail = () => {
+
     const { isLoading, isError, cocktails } = useFetch(
         `${process.env.REACT_APP_URL}${process.env.REACT_APP_API_KEY}/random.php`
     );
