@@ -17,19 +17,22 @@ export const CocktailsByLetter = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error message={"Something went wrong"}/>;
+        return <Error message={"Something went wrong"} />;
     return (
         <>
-            <form className="form">
-                <label htmlFor=""></label>
-                <select value={letter} onChange={(e) => { setLetter(e.target.value); }}>
-                    {alphabet.map((item) => {
-                        return (
-                            <option key={item} value={item}>{item}</option>
-                        );
-                    })}
-                </select>
-            </form>
+            <div className="flex-form">
+                <h3 className="title">Cocktails A to Z</h3>
+                <form className="form">
+                    <label htmlFor=""></label>
+                    <select value={letter} onChange={(e) => { setLetter(e.target.value); }}>
+                        {alphabet.map((item) => {
+                            return (
+                                <option key={item} value={item}>{item}</option>
+                            );
+                        })}
+                    </select>
+                </form>
+            </div>
             <CocktailList cocktails={cocktails} />
         </>
     );
