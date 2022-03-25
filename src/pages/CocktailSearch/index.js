@@ -12,7 +12,9 @@ export const CocktailSearch = () => {
     const [cocktails, setCocktails] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    const fetchDrinks = async (value = "p") => {
+    const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+    const fetchDrinks = async (value = letters[1 * Math.floor(Math.random() * 26)]) => {
         setIsLoading(true);
         try {
             const response = await fetch(`${process.env.REACT_APP_URL_SEARCH}s=${value}`);
@@ -49,7 +51,7 @@ export const CocktailSearch = () => {
     if (isError)
         return <Error message={"Something went wrong"} />;
     return (
-        <>
+        <section className="cocktail-search">
             <form className="form" onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -69,7 +71,7 @@ export const CocktailSearch = () => {
                 </div>
             }
             <CocktailList cocktails={cocktails} />
-        </>
+        </section>
     );
 };
 
