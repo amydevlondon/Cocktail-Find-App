@@ -27,6 +27,9 @@ export const Navbar = () => {
                             <NavLink to="/atoz" className="nav-link" href="/atoz">A-Z</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink to="/mocktails" className="nav-link">Mocktails</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink to="/random" className="nav-link"><FaRandom className="link-icon" />Random</NavLink>
                         </li>
                     </ul>
