@@ -14,7 +14,7 @@
 	padding: .5rem;
 }
 .cocktail-name {
-	font-family: var(--header-font-family);
+	font-family: var(--title-font-family);
 	font-size: var(--large-font-size);
 	margin-bottom: .25rem;
 }
