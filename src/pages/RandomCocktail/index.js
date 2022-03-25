@@ -14,7 +14,7 @@ export const RandomCocktail = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error message={"Something went wrong"} />;
+        return <Error />;
     return (
         <section className="random-cocktail">
             <Cocktail key={cocktails[0].idDrink} {...cocktails[0]} />

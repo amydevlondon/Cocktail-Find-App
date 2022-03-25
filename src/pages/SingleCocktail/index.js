@@ -14,7 +14,7 @@ export const SingleCocktail = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error message={"Something went wrong"} />;
+        return <Error/>;
     return (
         <section className="single-cocktail">
             {cocktails.map((cocktail) => {

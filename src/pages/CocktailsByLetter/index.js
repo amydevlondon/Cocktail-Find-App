@@ -17,7 +17,7 @@ export const CocktailsByLetter = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error message={"Something went wrong"} />;
+        return <Error />;
     return (
         <>
             <div className="flex-form">

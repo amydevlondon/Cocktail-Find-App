@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { MdErrorOutline } from 'react-icons/md';
 
-export const Error = ({ message }) => {
+export const Error = ({ message = "something went wrong" }) => {
     return (
         <div className="error">
             <div>

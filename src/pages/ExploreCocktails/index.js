@@ -16,10 +16,10 @@ export const ExploreCocktails = () => {
     if (isLoading)
         return <Loading />;
     if (isError)
-        return <Error message={"Something went wrong"} />;
+        return <Error />;
     return (
         <>
-        <div className="flex-form">
+            <div className="flex-form">
                 <h3 className="title">Explore</h3>
                 <form className="form">
                     <select value={category} onChange={(e) => { setCategory(e.target.value); }}>
@@ -28,7 +28,7 @@ export const ExploreCocktails = () => {
                         <option value="randomselection">Random</option>
                     </select>
                 </form>
-        </div>
+            </div>
             <CocktailList cocktails={cocktails} />
         </>
     );
