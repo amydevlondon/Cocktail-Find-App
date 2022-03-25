@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
 :root {
-	--header-font-family: 'Lobster', cursive;
+	--title-font-family: 'Lobster', cursive;
 	--main-font-family: 'Staatliches', cursive;
 	--xl-font-size: 2.5rem;
 	--large-font-size: 2rem;
@@ -50,6 +50,13 @@ ul {
 	font-size: var(--small-font-size);
 	display: block;
 }
+.flex-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 2rem;
+}
 .arrow-icon {
 	margin-left: .3rem;
 }
@@ -57,18 +64,25 @@ ul {
 	margin-bottom: .25rem;
 	color: var(--pink);
 }
+.title {
+	font-family: var(--title-font-family);
+	font-size: var(--xl-font-size);
+}
 .form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 3rem 2rem;
+}
+.cocktail-search .form {
+	padding: 4rem 2rem;
 }
 .form select {
 	cursor: pointer;
-	padding: 1rem 2rem;
+	padding: .8rem 2rem;
 	background-color: var(--body-color);
 	border-radius: var(--radius);
 	font-size: inherit;
 	font-family: inherit;
 	color: inherit;
+	margin: 1rem 0;
 }
