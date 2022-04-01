@@ -5,7 +5,7 @@ import Loading from '../../components/Loading';
 import Error from '../../components/Error';
 import CocktailList from '../../components/CocktailList';
 
-export const Mocktails = () => {
+const Mocktails = () => {
 
     const { isLoading, isError, cocktails } = useFetch(
         `${process.env.REACT_APP_URL_NON_ALCOHOL}`

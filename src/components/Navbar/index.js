@@ -4,7 +4,7 @@ import { FaBars, FaHome, FaSearch, FaCocktail, FaRandom } from 'react-icons/fa';
 import { MdExplore } from 'react-icons/md';
 import { NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <nav className="navbar navbar-custom navbar-expand-md">
             <div className="container-fluid">

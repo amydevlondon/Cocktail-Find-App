@@ -5,7 +5,7 @@ import Loading from '../../components/Loading';
 import Error from '../../components/Error';
 import { useParams } from 'react-router-dom';
 
-export const SingleCocktail = () => {
+const SingleCocktail = () => {
     const { id } = useParams();
     const { isLoading, isError, cocktails } = useFetch(
         `${process.env.REACT_APP_URL_SINGLE_COCKTAIL}${id}`

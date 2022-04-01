@@ -5,7 +5,7 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 import image from '../../images/image1.jpg';
 import { Link } from "react-router-dom";
 
-export const Hero = () => {
+const Hero = () => {
     return (
         <div className="hero">
             <img className="hero-image" src={image} alt="" />

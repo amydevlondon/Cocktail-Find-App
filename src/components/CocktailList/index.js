@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Cocktail from '../Cocktail';
 
-export const CocktailList = ({ cocktails }) => {
+const CocktailList = ({ cocktails }) => {
     return (
         <div className="cocktail-list">
             {cocktails.map((cocktail) => {
