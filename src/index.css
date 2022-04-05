@@ -2,20 +2,20 @@
 :root {
 	--title-font-family: 'Lobster', cursive;
 	--main-font-family: 'Staatliches', cursive;
-	--xl-font-size: 2.5rem;
+	--xl-font-size: 3.2rem;
 	--large-font-size: 2rem;
 	--normal-font-size: 1.1rem;
 	--small-font-size: 1rem;
 	--font-color: hsl(0, 0%, 23%);
 	--body-color: hsl(350, 38%, 88%);
 	--pink: hsl(327, 93%, 58%);
-	--overlay: hsla(327, 30%, 90%, .8);
+	--overlay: hsla(327, 45%, 90%, .8);
 	--transition: .3s linear;
 	--radius: 3px;
 }
 @media screen and (min-width: 600px) {
 	:root {
-		--xl-font-size: 3.5rem;
+		--xl-font-size: 4rem;
 		--large-font-size: 2rem;
 		--normal-font-size: 1.25rem;
 		--small-font-size: 1.1rem;
@@ -50,13 +50,6 @@ ul {
 	font-size: var(--small-font-size);
 	display: block;
 }
-.flex-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 4rem 2rem;
-}
 .arrow-icon {
 	margin-left: .3rem;
 }
@@ -68,10 +61,12 @@ ul {
 	font-family: var(--title-font-family);
 	font-size: var(--xl-font-size);
 }
-.form {
+.flex-form {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 4rem 2rem 2rem;
 }
 .cocktail-search .form {
 	padding: 4rem 2rem;
