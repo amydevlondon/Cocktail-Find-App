@@ -6,4 +6,5 @@
 }
 .random-cocktail .cocktail {
 	max-width: 400px;
+	margin: 0 1rem;
 }
