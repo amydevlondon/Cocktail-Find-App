@@ -3,7 +3,7 @@
 	padding: 1rem;
 	background-color: hsl(0, 0%, 100%, .7);
 	border: solid 1px hsl(350, 38%, 85%);
-	margin: 0 auto;
+	margin: 1rem;
 }
 .cocktail img {
 	width: 100%;
